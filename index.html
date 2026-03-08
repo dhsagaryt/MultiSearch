@@ -10,16 +10,12 @@
 
     <!-- Title and Favicons -->
     <title>MultiSearch | @dhsagaryt</title> 
-    <link type="image/png" sizes="16x16" rel="icon" href="assets/images/web/icons8-find-flat-icons-16.png"> 
-    <link type="image/png" sizes="32x32" rel="icon" href="assets/images/web/icons8-find-flat-icons-32.png"> 
-    <link type="image/png" sizes="96x96" rel="icon" href="assets/images/web/icons8-find-flat-icons-96.png"> 
-    <link type="image/png" sizes="72x72" rel="icon" href="assets/images/web/icons8-find-flat-icons-72.png"> 
-    <link type="image/png" sizes="96x96" rel="icon" href="assets/images/web/icons8-find-flat-icons-96.png"> 
-    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="assets/images/web/icons8-find-flat-icons-57.png"> 
-    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="assets/images/web/icons8-find-flat-icons-60.png"> 
-    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="assets/images/web/icons8-find-flat-icons-72.png"> 
-    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="assets/images/web/icons8-find-flat-icons-76.png"> 
-    <meta name="msapplication-square70x70logo" content="assets/images/web/icons8-find-flat-icons-70.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MultiSearch" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,8 +34,8 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- =======================================================
-    * Template Used: Logis by (BootstrapMade)
-    * Vendor: 1. Bootstrap v5.3.7, 
+    * I Template Use: Logis by (BootstrapMade)
+    * Vendors: 1. Bootstrap v5.3.7, 
     *         2. Bootstrap-Icon v1.13.1, 
     *         3. AOS v2.3.4, 
     *         4. Font Awesome v7, 
@@ -49,9 +45,198 @@
     * License: https://github.com/dhsagaryt/MultiSearch/blob/main/LICENSE
     * Updated: Aug 08 2025 with Bootstrap v5.3.7
     ======================================================== -->
+
+      <!-- Overwrite CSS -->
+      <style>
+        /* Search Engine Selection Buttons */
+        .btn-grid {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: 2px solid #1c2e4a;
+          padding: 1rem;
+          background-color: #0e1d34;
+          color: #335993;
+          text-align: center;
+          cursor: pointer;
+          box-sizing: border-box;
+          align-content: center;
+        }
+        .btn-grid:hover {
+          color: #4f7ec7;
+          border: 2px solid #2a3d5a;
+          background-color: #11213a;
+        }
+        .btn-check:checked + .btn-grid {
+          background-color: #11213a;
+          color: #4f7ec7;
+          border-color: #2a3d5a;
+        }
+      </style>
   </head>
+
+
+  
   <body>
-    Hello World!
+    <!-- HEADER SECTIONS -->
+    <header id="header" class="header d-flex align-items-center fixed-ab">
+      <!-- Keep your existing header wrapper/classes -->
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between mt-3">
+
+        <!-- Left: Logo (your existing markup is fine) -->
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <h1 class="sitename text-white d-none">dhsagaryt</h1>
+        </a>
+
+        <!-- Right: Panel Toggle (no 'mobile-nav-toggle' class to avoid conflicts) -->
+        <a href="https://github.com/sponsors/dhsagaryt">
+          <i id="myPanelToggle" class="bi bi-github mypanel-toggle text-white fs-2" aria-label="Open settings"></i>
+        </a>
+      </div>
+    </header>
+
+
+
+    <!-- MAIN SECTIONS -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background pb-0">
+        <img src="assets/images/img/world-dotted-map.png" alt="" class="hero-bg" data-aos="fade-in">
+
+        <!-- Main Container -->
+        <div class="container">
+          <div class="row gy-4 d-flex justify-content-between">
+            <!-- left side -->
+            <div class="col-lg-6 order-1 order-lg-1 d-flex flex-column justify-content-center">
+              <h2 data-aos="fade-up">Your Comprehensive MultiSearch Partner</h2>
+              <p data-aos="fade-up" data-aos-delay="100" class="fs-4">Your all-in-one search hub → type, choose, and search across top engines without any extra steps.</p>
+
+              <!-- Search Form -->
+              <form id="searchForm" role="search" action="https://www.google.com/search" method="GET" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                <input id="searchInput" type="text" class="form-control" placeholder="Google.com" name="q">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+
+              <div class="row gy-4 d-none d-lg-flex opacity-75" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="col-lg-3 col-6">
+                  <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="247" data-purecounter-duration="0" class="purecounter">247</span>
+                    <p>Always</p>
+                  </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-6">
+                  <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="365" data-purecounter-duration="0" class="purecounter">365</span>
+                    <p>Forever</p>
+                  </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-6">
+                  <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="404" data-purecounter-duration="0" class="purecounter">404</span>
+                    <p>Lost</p>
+                  </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-6">
+                  <div class="stats-item text-center w-100 h-100">
+                    <span data-purecounter-start="0" data-purecounter-end="302" data-purecounter-duration="0" class="purecounter">302</span>
+                    <p>Found</p>
+                  </div>
+                </div><!-- End Stats Item -->
+
+              </div>
+            </div>
+            
+            <!-- Right Side -->
+            <!-- Radio Buttons to Change Form Action and Placeholder -->
+            <div class="col-lg-5 order-2 order-lg-2 hero-img" data-aos="zoom-out">
+              <div class="container text-center">
+                <div id="buttonContainer">
+                  <div class="row g-3 d-flex flex-wrap justify-content-center" id="buttonRow">
+                    <!-- Buttons 1 to 18 -->
+                    <div class="col-4" title="Google.com">
+                      <input type="radio" class="btn-check" name="searchOption" id="google" autocomplete="off" checked onclick="changeSearch('https://www.google.com/search?q=', 'Google.com', 'q')">
+                      <label class="btn-grid" for="google"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.google.com&sz=32" alt="Google Icon" onerror="this.src='./svgs/offline.svg'"> </label>
+                    </div>
+                    <div class="col-4" title="Bing.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="bing" autocomplete="off" onclick="changeSearch('https://bing.com/?q=', 'Bing.com', 'q')">
+                        <label class="btn-grid" for="bing"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.bing.com&sz=32" alt="Bing Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="DuckDuckGo.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="DuckDuckGo" autocomplete="off" onclick="changeSearch('https://duckduckgo.com/?q=', 'DuckDuckGo.com', 'q')">
+                        <label class="btn-grid" for="DuckDuckGo"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://duckduckgo.com&sz=32" alt="DuckDuckGo Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Brave.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Brave" autocomplete="off" onclick="changeSearch('https://search.brave.com/search?q=', 'Brave.com', 'q')">
+                        <label class="btn-grid" for="Brave"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://search.brave.com&sz=32" alt="Brave Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Yahoo.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Yahoo" autocomplete="off" onclick="changeSearch('https://search.yahoo.com/search?p=', 'Yahoo.com', 'q')">
+                        <label class="btn-grid" for="Yahoo"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://search.yahoo.com&sz=32" alt="Yahoo Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Ask.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Ask" autocomplete="off" onclick="changeSearch('https://www.ask.com/web?q=', 'Ask.com', 'q')">
+                        <label class="btn-grid" for="Ask"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.ask.com&sz=32" alt="Ask Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Yandex.com">
+                      <!-- text -->
+                        <input type="radio" class="btn-check" name="searchOption" id="Yandex" autocomplete="off" onclick="changeSearch('https://yandex.com/search/?text=', 'Yandex.com', 'text')">
+                        <label class="btn-grid" for="Yandex"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://yandex.com&sz=32" alt="Yandex Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Ecosia.org">
+                        <input type="radio" class="btn-check" name="searchOption" id="Ecosia" autocomplete="off" onclick="changeSearch('https://www.ecosia.org/search?q=', 'Ecosia.org', 'q')">
+                        <label class="btn-grid" for="Ecosia"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.ecosia.org&sz=32" alt="Ecosia Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Baidu.com">
+                      <!-- text -->
+                        <input type="radio" class="btn-check" name="searchOption" id="Baidu" autocomplete="off" onclick="changeSearch('https://www.baidu.com/s?wd=', 'Baidu.com', 'wd')">
+                        <label class="btn-grid" for="Baidu"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.baidu.com&sz=32" alt="Baidu Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Naver.com">
+                      <!-- text -->
+                        <input type="radio" class="btn-check" name="searchOption" id="Naver" autocomplete="off" onclick="changeSearch('https://search.naver.com/search.naver?query=', 'Naver.com', 'query')">
+                        <label class="btn-grid" for="Naver"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.naver.com&sz=32" alt="Naver Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Dogpile.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Dogpile" autocomplete="off" onclick="changeSearch('https://www.dogpile.com/serp?q=', 'Dogpile.com', 'q')">
+                        <label class="btn-grid" for="Dogpile"><img src="https://www.dogpile.com/static/info.dogpile.com/favicon-32x32.png" alt="Dogpile Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Startpage.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Startpage" autocomplete="off" onclick="changeSearch('https://www.startpage.com/sp/search?q=', 'Startpage.com', 'q')">
+                        <label class="btn-grid" for="Startpage"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.startpage.com&sz=32" alt="Startpage Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Mojeek.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Mojeek" autocomplete="off" onclick="changeSearch('https://www.mojeek.com/search?q=', 'Mojeek.com', 'q')">
+                        <label class="btn-grid" for="Mojeek"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://www.mojeek.com&sz=32" alt="Mojeek Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Yep.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Yep" autocomplete="off" onclick="changeSearch('https://yep.com/web?q=', 'Yep.com', 'q')">
+                        <label class="btn-grid" for="Yep"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://yep.com&sz=32" alt="Yep Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                    <div class="col-4" title="Gibiru.com">
+                        <input type="radio" class="btn-check" name="searchOption" id="Gibiru" autocomplete="off" onclick="changeSearch('https://gibiru.com/results.html?q=', 'Gibiru.com', 'q')">
+                        <label class="btn-grid" for="Gibiru"><img src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://gibiru.com&sz=32" alt="Gibiru Icon" onerror="this.src='./svgs/offline.svg'"></label>
+                    </div>
+                  </div>
+                </div>
+                <figcaption data-aos="fade-up" data-aos-delay="100" class="blockquote-footer mt-4 pt-1 opacity-50">Search where your heart points. — <a href="https://www.instagram.com/dhsagaryt">@dhsagaryt</a></figcaption>
+              </div>
+            </div>                      
+
+          </div>
+        </div>
+
+      </section><!-- /Hero Section -->
+    </main>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -63,5 +248,133 @@
 
     <!-- Main JS File -->
     <script src="js/main.js"></script>
+
+    <!-- Overwrite JS (Button Groups) -->
+      <script>
+        // Store original HTML for each button
+        const rows = document.querySelectorAll('#buttonRow .col-4');
+        const originalHTML = Array.from(rows).map(btn => btn.innerHTML);
+
+        const pageSize = 6;
+        const totalButtons = rows.length;
+        const totalPages = Math.ceil(totalButtons / pageSize);
+        let currentPage = 1;
+
+        // ✅ LocalStorage key
+        const MS_KEY = "multisearch_last_engine";
+
+        function saveLastEngine(actionURL, placeholderText, queryParam) {
+          try {
+            const checked = document.querySelector('input[name="searchOption"]:checked');
+            const payload = {
+              id: checked ? checked.id : null,
+              actionURL,
+              placeholderText,
+              queryParam
+            };
+            localStorage.setItem(MS_KEY, JSON.stringify(payload));
+          } catch (e) {}
+        }
+
+        function applyLastEngine() {
+          try {
+            const raw = localStorage.getItem(MS_KEY);
+            if (!raw) return;
+
+            const data = JSON.parse(raw);
+            if (!data) return;
+
+            // If radio exists, check it
+            if (data.id) {
+              const radio = document.getElementById(data.id);
+              if (radio) radio.checked = true;
+            }
+
+            // Apply form settings
+            const form = document.getElementById('searchForm');
+            const input = document.getElementById('searchInput');
+            if (form && input) {
+              form.action = data.actionURL || form.action;
+              input.placeholder = data.placeholderText || input.placeholder;
+              input.name = data.queryParam || input.name;
+            }
+          } catch (e) {}
+        }
+
+        // ✅ Your function: now also saves last selected engine
+        function changeSearch(actionURL, placeholderText, queryParam) {
+          const form = document.getElementById('searchForm');
+          const input = document.getElementById('searchInput');
+
+          form.action = actionURL;
+          input.placeholder = placeholderText;
+          input.name = queryParam;
+
+          // ✅ save selection
+          saveLastEngine(actionURL, placeholderText, queryParam);
+        }
+
+        function navigate(direction) {
+          currentPage += direction;
+          currentPage = Math.max(1, Math.min(currentPage, totalPages));
+          showPage(currentPage);
+
+          // ✅ after DOM changes, re-apply saved selection
+          applyLastEngine();
+        }
+
+        function showPage(page) {
+          // Hide all first
+          rows.forEach((button, index) => {
+            button.style.display = 'none';
+            button.style.position = 'absolute';
+            button.innerHTML = originalHTML[index]; // Restore original content
+          });
+
+          const start = (page - 1) * pageSize;
+          const end = Math.min(page * pageSize, totalButtons);
+
+          for (let i = start; i < end; i++) {
+            rows[i].style.display = 'block';
+            rows[i].style.position = 'relative';
+          }
+
+          // Insert navigation buttons
+          if (start > 0) {
+            rows[start].innerHTML = `<label class="btn-grid" onclick="navigate(-1)"><i class="fa-solid fa-arrow-left"></i></label>`;
+          }
+          if (end < totalButtons) {
+            rows[end - 1].innerHTML = `<label class="btn-grid" onclick="navigate(1)"><i class="fa-solid fa-arrow-right"></i></label>`;
+          }
+        }
+
+        function adjustLayout() {
+          const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+          if (!isMobile) {
+            // Desktop: restore all original buttons
+            rows.forEach((button, index) => {
+              button.style.display = 'block';
+              button.style.position = 'relative';
+              button.innerHTML = originalHTML[index];
+            });
+          } else {
+            currentPage = 1;
+            showPage(currentPage);
+          }
+
+          // ✅ after layout rebuild, re-apply last selection
+          applyLastEngine();
+        }
+
+        window.addEventListener('load', () => {
+          adjustLayout();
+          applyLastEngine(); // ✅ restore on page load
+        });
+
+        window.addEventListener('resize', () => {
+          setTimeout(adjustLayout, 100);
+        });
+      </script>
   </body>
 </html>
